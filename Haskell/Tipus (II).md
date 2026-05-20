@@ -23,7 +23,7 @@ area :: Square -> Area
 area (Square s) = s * s
 
 area :: Circle -> Area
-area (Square r) = pi * r * r
+area (Circle r) = pi * r * r
 ```
 
 Computing the `area` only make sense for certain types (what is the area of a `Bool`?). Hence, **`area` can not be defined as a parametric polymorfic function**.
