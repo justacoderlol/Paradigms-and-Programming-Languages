@@ -34,14 +34,13 @@ GHCi> [20,18..0]
 ## Llistes per comprensió
 
 Les llistes per comprensió són una variant en forma de llista dels conjunts per comprensió, 
-que és una sintaxi utilitzada en matemàtiques per generar un conjunt a partir d’un altre conjunt original, e.g., $S = \\{ 2 \cdot x | x \in \mathcal{N}, x\\% 2 = 0, x\\% 5 = 0 \\}$.
+que és una sintaxi utilitzada en matemàtiques per generar un conjunt a partir d’un altre conjunt original, e.g., $S = \left\{ 2 \cdot x | x \in N, x \bmod 2 = 0, x \bmod 5 = 0 \right\}$.
 
 - La part anterior a la barra vertical és l'expressió que produeix membres del nou set.
 - $x$ és una variable que pren els valors de conjunt original $\mathcal{N}$.
 - $x\\% 2 = 0, x\\% 5 = 0$ són predicats.
 
 Aquesta expressió matemàtica genera un conjunt que conté el doble de tots els naturals que són pars i multiples de 5.
-
 
 Les llistes per comprensió segueixen una sintaxi similar que els conjunts, però preserven l'ordre de l'enumeració. En podem trobar en diferents llenguatges,  no només Haskell.
 
@@ -51,8 +50,6 @@ cada nombre senar més gran que 10 per "BANG!"
 i cada nombre senar menor que 10 per "BOOM!".
 Si un nombre no és senar, el descartem de la nostra llista. En Haskell ho farem així:
 
-> Les llistes per comprensió és poden utilitzar per emular el compartament de la funció `map`.
-
 ```haskell
 ghci> boomBangs xs = [if x < 10 then "BOOM!" else "BANG!" | x <- xs, odd x]
 ghci> boomBangs [1..20]
@@ -61,8 +58,6 @@ ghci> boomBangs [1..20]
 
 Podem incloure diversos predicats.
 Si volguéssim el doble de tots els nombres del 10 al 20 que no són el 13, 15 o 19, faríem:
-
-> També poden emular el comportament de la funció `filter`.
 
 ```haskell
 ghci> [x*2 | x <- [10..20], x \= 13, x \= 15, x \= 19]
@@ -82,6 +77,7 @@ ghci> [x*y | x <- [2,5,10], y <- [8,10,11]]
 ghci> [(x,y) | x <- [2,5,10], y <- [8,10,11]]
 [(2,8),(2,10),(2,11),(5,8),(5,10),(5,11),(10,8),(10,10),(10,11)]
 ```
+
 
 ## Folding
 

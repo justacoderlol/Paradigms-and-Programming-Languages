@@ -1,3 +1,4 @@
+
 # Sessió 1
 
 Podem alliberar la programació de l'estil von Neumann?
@@ -105,6 +106,7 @@ Si feu canvis al fitxer i els voleu tornar a compilar, feu servir `:reload`.
 El programa es tornarà a compilar segons sigui necessari, i GHCi farà 
 tot el possible per evitar tornar a 
 compilar mòduls si les seves dependències externes no han canviat.
+
 ```haskell
 Prelude> :reload
 Compiling Main                ( Main.hs, interpreted )
@@ -430,12 +432,12 @@ Intuïtivament, podem entendre un tipus com un conjunt de valors permesos i conj
 ### Sintaxi dels tipus
 
 |       Tipus       |          Literals          |                                   Ús                                   |                  Operacions                   |
-|:-----------------:| :------------------------: |:----------------------------------------------------------------------:|:---------------------------------------------:|
+| :---------------: | :------------------------: | :--------------------------------------------------------------------: | :-------------------------------------------: |
 |        Int        |          1, 2, -3          |                      Number type (signed, 64bit)                       |       +, -, \*, div, mod, fromIntegral        |
 |      Integer      | 1, -2, 900000000000000000  |                         Unbounded number type                          | +, -, \*, div, mod, fromInteger, fromIntegral |
 |       Float       |         0.1, 1.2e5         |                         Floating point numbers                         |               +, -, \*, /, sqrt               |
 |      Double       |         0.1, 1.2e5         | Floating point numbers. Aproximations are more precise than Float type |               +, -, \*, /, sqrt               |
-|       Bool        |        True, False         |                              Truth values                              |                     &&, \|\|, not, otherwise            |
+|       Bool        |        True, False         |                              Truth values                              |           &&, \|\|, not, otherwise            |
 |       Char        | 'a', 'Z', '\n', '\t', '\\' |  Represents a character (a letter, a digit, a punctuation mark, etc)   | ord, chr, isAlpha, isDigit, isUpper, isLower  |
 | String aka [Char] |         "abcd", ""         |                         Strings of characters                          |                  reverse, ++                  |
 

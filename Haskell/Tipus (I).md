@@ -1,6 +1,5 @@
 # More about types
 
-
 ## Our own types
 
 So far, we've run into a lot of data types. `Bool`, `Int`, `Char`, `Maybe`, etc.
@@ -62,7 +61,7 @@ True || x   = True
 We can define a `Rational` number as:
 
 ```haskell
-data Rational = Pair Integer Integerderiving Show
+data Rational = Pair Integer Integer deriving Show
 ```
 
 among other operations, the multiplication of rationals makes sense. We do

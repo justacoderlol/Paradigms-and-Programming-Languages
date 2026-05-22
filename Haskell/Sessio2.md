@@ -1,6 +1,5 @@
 # Sessió 2
 
-
 ## Lambdes
 
 Les expressions lambda són bàsicament funcions anònimes, que típicament es fan servir quan només volem fer servir la funció una vegada en un lloc puntual. Un cas freqüent és passar una expressió labmda a una funció d'ordre superior.
@@ -19,7 +18,7 @@ GHCi> :t (\x y -> x+y)
 (\x y -> x+y) :: Num a => a -> a -> a
 GHCi> (\x y -> x+y) 1 2
 3
-GHCi>
+GHCi>[[README]]
 ```
 
 Exemple:
