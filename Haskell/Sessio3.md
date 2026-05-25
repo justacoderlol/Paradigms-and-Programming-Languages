@@ -34,7 +34,7 @@ GHCi> [20,18..0]
 ## Llistes per comprensió
 
 Les llistes per comprensió són una variant en forma de llista dels conjunts per comprensió, 
-que és una sintaxi utilitzada en matemàtiques per generar un conjunt a partir d’un altre conjunt original, e.g., $S = \left\{ 2 \cdot x | x \in N, x \bmod 2 = 0, x \bmod 5 = 0 \right\}$.
+que és una sintaxi utilitzada en matemàtiques per generar un conjunt a partir d’un altre conjunt original, e.g., $S = \\{ 2 \cdot x | x \in N, x \bmod 2 = 0, x \bmod 5 = 0 \\}$.
 
 - La part anterior a la barra vertical és l'expressió que produeix membres del nou set.
 - $x$ és una variable que pren els valors de conjunt original $\mathcal{N}$.
